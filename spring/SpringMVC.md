@@ -1,7 +1,7 @@
 # 1 Web MVC简介
 
 ## 1.1、Web开发中的请求-响应模型：
-http://pp5tb1vb6.bkt.clouddn.com/0e6f91933a9640849ccfd0dad09d9a84.jpg
+![img](assets/2fc5edc55fa262fddccecc1816f5ff7b__1.JPG)
 
 在Web世界里，具体步骤如下：
 
