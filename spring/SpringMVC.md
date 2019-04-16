@@ -1,6 +1,6 @@
 # 1 Web MVC简介
 
-##1.1、Web开发中的请求-响应模型：
+## 1.1、Web开发中的请求-响应模型：
 
 ![img](assets/2fc5edc55fa262fddccecc1816f5ff7b__1.JPG)
 
@@ -12,7 +12,7 @@
 
 3、web服务器处理完成后，返回内容给web客户端（一般就是我们的浏览器），客户端对接收的内容进行处理（如web浏览器将会对接收到的html内容进行渲染以展示给客户）。
 
-##1.2、标准MVC模型概述
+## 1.2、标准MVC模型概述
 
 **MVC**模型：是一种架构型的模式，本身不引入新功能，只是帮助我们将开发的结构组织的更加合理，使展示与模型分离、流程控制逻辑、业务逻辑调用与展示逻辑分离。
 
@@ -28,7 +28,7 @@
 
 **注**：在标准的MVC中模型能主动推数据给视图进行更新（观察者设计模式，在模型上注册视图，当模型更新时自动更新视图），但在Web开发中模型是无法主动推给视图（无法主动更新用户界面），因为在Web开发是请求-响应模型。
 
-##1.3、Web MVC概述
+## 1.3、Web MVC概述
 
 Web MVC标准架构
 
@@ -36,9 +36,9 @@ Web MVC标准架构
 
 在Web MVC模式下，模型无法主动推数据给视图，如果用户想要视图更新，需要再发送一次请求（即请求-响应模型）。
 
-#2 Spring Web MVC
+# 2 Spring Web MVC
 
-##2.1 Spring Web MVC是什么
+## 2.1 Spring Web MVC是什么
 
 Spring Web MVC是一种基于Java的实现了Web MVC设计模式的请求驱动类型的轻量级Web框架，即使用了MVC架构模式的思想，将web层进行职责解耦，基于请求驱动指的就是使用请求-响应模型，框架的目的就是帮助我们简化开发，Spring Web MVC也是要简化我们日常Web开发的。
 
@@ -50,7 +50,7 @@ Spring Web MVC：
 
 ==页面控制器/处理器==为Controller接口（仅包含`ModelAndView handleRequest(request, response)` 方法）的实现（也可以是任何的POJO类）；支持本地化（Locale）解析、主题（Theme）解析及文件上传等；提供了非常灵活的数据验证、格式化和数据绑定机制；提供了强大的约定大于配置（惯例优先原则）的契约式编程支持。
 
-##2.2 Spring Web MVC能帮我们做什么
+## 2.2 Spring Web MVC能帮我们做什么
 
 √让我们能非常简单的设计出干净的Web层和薄薄的Web层；
 
@@ -96,7 +96,7 @@ Spring Web MVC框架也是一个基于请求驱动的Web框架，并且也使用
 
 4、  前端控制器再次收回控制权，将响应返回给用户，图中的步骤8；至此整个结束。
 
-###问题：
+### 问题：
 
 1、  请求如何给前端控制器？
 
@@ -332,7 +332,7 @@ protected void render(ModelAndView mv, HttpServletRequest request, HttpServletRe
 
 ………………还有比如RESTful风格的支持、简单的文件上传、约定大于配置的契约式编程支持、基于注解的零配置支持等等。
 
-##2.5 开发步骤在Hello World中详细验证
+## 2.5 开发步骤在Hello World中详细验证
 
 ### 2.5.1、准备开发环境和运行环境：
 
@@ -453,7 +453,7 @@ ModelAndView：包含了视图要实现的**模型数据**和**逻辑视图名**
 
 name="/hello"：前边配置的BeanNameUrlHandlerMapping，表示如过请求的URL为 “上下文/hello”，则将会交给该Bean进行处理。
 
-###2.5.6、开发视图页面
+### 2.5.6、开发视图页面
 
 创建 /WEB-INF/jsp/hello.jsp视图页面：
 
